@@ -1,7 +1,7 @@
 function countZeroes(arr) {
   const firstZeroIdx = findFirstZeroIdx(arr);
 
-  return firstZeroIdx >= 0 ? arr.splice(firstZeroIdx).length : 0;
+  return firstZeroIdx > -1 ? arr.slice(firstZeroIdx).length : 0;
 }
 
 function findFirstZeroIdx(arr) {
